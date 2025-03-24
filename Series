@@ -1,0 +1,11 @@
+import numpy as np
+import pandas as pd
+
+# Объекты Series 
+data = pd.Series([0.25, 0.05, 0.75, 1.0], 
+        index = ['a', 'b','c','d'] )
+print(data['b':'d']) #Обращение(срез) по присвоенному _index_ 
+#Присвоение index может быть любым(например цифры в неправильном порядке.
+data = pd.Series([0.25, 0.05, 0.75, 1.0], 
+        index = [11,4,53,13] )
+print(data);
